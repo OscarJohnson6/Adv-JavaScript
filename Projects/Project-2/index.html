@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <script src="script.js" charset="UTF-8"></script>
+    </head>
+
+    <body class="m-2">
+        <div class="flex flex-row justify-center items-center">
+            <div class="justify-between mr-2" id="zipCodeInput">
+                <input class="border-4 rounded" 
+                        type="text" name="zipCode" id="zipCode" placeholder="Enter your zipcode">
+                <button class="border-2 border-blue-300 bg-blue-200 px-2 py-1 rounded-xl" 
+                        type="submit" id="submitButton">Submit</button>
+            </div>
+
+            <div class="justify-between">
+                <label for="fahrenheit">
+                    Farenheit
+                    <input type="radio" name="temperature" value="fahrenheit" checked>
+                </label>
+
+                <label for="celsius">
+                    Celsius
+                    <input type="radio" name="temperature" value="celsius">
+                </label>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center mt-6" id="tempatureOutput">
+        </div>
+    </body>
+</html>

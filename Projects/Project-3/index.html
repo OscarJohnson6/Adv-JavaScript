@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <script src="script.js" charset="UTF-8"></script>
+    </head>
+
+    <body class="m-2">
+        <div class="flex flex-row justify-center">
+            <div class="flex flex-col" id="taskInput">
+                <label for="task">Enter Your Task</label>
+                <input class="border-4 rounded mt-2 mb-2" 
+                        type="text" name="task" id="task" placeholder="Enter your task">
+
+                <button class="border-2 border-blue-300 bg-blue-200 px-2 py-1 rounded-xl w-3/5" 
+                        type="submit" id="submitButton">Submit</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center mt-10" id="taskOutput">
+        </div>
+    </body>
+</html>

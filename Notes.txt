@@ -1,0 +1,18 @@
+EventListenter
+event.type: Returns the type of event (e.g., "click", "keydown", "submit").
+event.target: Returns the element that triggered the event.
+event.preventDefault(): Prevents the default action of the event from occurring.
+event.stopPropagation(): Stops the event from propagating to parent elements.
+event.stopPropagation(): Stops the event from propagating to parent elements.
+event.keyCode (for keyboard events): Returns the Unicode value of the pressed key.
+event.clientX and event.clientY (for mouse events): Returns the horizontal and vertical coordinates of the mouse pointer relative to the viewport.
+event.stopPropagation() and event.stopImmediatePropagation(): Control the propagation of the event.
+
+querySelectorAll("");
+Element selectors: e.g., "div", "p", "button".
+ID selectors: e.g., "#myElement".
+Class selectors: e.g., ".myClass".
+Attribute selectors: e.g., "[data-id='123']".
+Attribute presence selectors: e.g., "[disabled]".
+Attribute value selectors: e.g., "[name='task']".
+Combined selectors: e.g., "div.myClass", "button[disabled]".

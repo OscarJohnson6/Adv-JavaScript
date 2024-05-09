@@ -1,0 +1,41 @@
+<!--
+Tailwind Form: https://tailwindui.com/components/application-ui/forms/form-layouts
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <script src="script.js" charset="UTF-8"></script>
+        <title>Project 1</title>
+    </head>
+
+    <body>
+    <div class="flex-col my-0 mx-auto w-4/5">
+        <form id="gross-summary-input">
+            <div class="space-y-12">
+            <div class="border-b border-gray-900/10 pb-12">
+                <div class="mt-10 mx-auto max-w-md">
+                    <label for="grossSalary" class="block text-sm font-medium leading-6 text-gray-900">Enter Your Gross Salary:</label>
+                    <div class="mt-2">
+                    <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                        <span class="flex select-none items-center pl-3 text-gray-500 sm:text-sm">$</span>
+                        <input type="text" id="grossSalary" name="grossSalary" pattern="[0-9]+" placeholder="0.00"
+                            class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>    
+            <div class="mt-6 flex items-center justify-end gap-x-6">
+                <button type="reset" id="resetButton" class="text-sm font-semibold leading-6 text-gray-900">Clear</button>
+                <button type="button"  id="submitButton" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="resultsTables" class="mx-auto w-3/6">
+    </div>
+    </body>
+</html>
